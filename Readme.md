@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дарья Роон](https://up.htmlacademy.ru/htmlcss/28/user/895171).
-* Наставник: `Неизвестно`.
+* Наставник: [Геннадий Максимов](https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
