@@ -1,0 +1,243 @@
+/* Variables */
+
+:root {
+	--basic-white: #FFFFFF;
+	--basic-dark-grey: #323232;
+	--basic-green-cyan: #849D8F;
+	--basic-blue-cyan: #8996A6;
+	--basic-dark-pink: #9D8B84;
+	--basic-red-orange: #F26843;
+
+	--special-red: #E74A35;
+	--special-red-orange: #D07058;
+	--medium-dark-gray: #5A5A5A;
+	--medium-light-gray: #999999;
+}
+/* Global */
+
+body {
+  min-width: 1220px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height:18px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-green-cyan);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  color: var(--basic-white);
+}
+/* Main navigation */
+
+.main-nav {
+  font-size: 16px;
+  line-height: 18px;  
+}
+ul {
+  list-style: none;
+}
+.main-nav-current > a:not([href]) {
+  background-color: var(--special-red-orange);
+  border-radius: 26px;
+  padding: 9px 13px 11px 13px;
+  }
+
+.submenu-current > a:not([href]) {
+  background-color: var(--special-red-orange);
+}
+.submenu {
+	margin-top: 16px;
+	background-color: var(--basic-white);
+}
+.submenu a {
+	color: var(--basic-dark-grey);
+    text-decoration: none;
+}
+
+.main-nav-list a:hover,
+.main-nav-list a:focus,
+.user-nav a:hover,
+.user-nav a:focus
+ {
+	color: var(--basic-dark-grey);
+	background-color: var(--basic-white);
+	text-decoration: none;
+	fill: var(--basic-dark-grey);
+}
+
+
+.visually-hidden {
+	display: none;
+}
+
+.user-nav a {
+	background-color: rgba(255, 255, 255, 0.2);
+	text-decoration: none;
+}
+.basket-with-goods a {
+background-color: var(--basic-white);
+color: var(--basic-dark-grey);
+}
+.user-nav a:hover svg path,
+.user-nav a:focus svg path {
+	fill: var(--basic-dark-grey);
+}
+
+.features {
+	color: var(--basic-dark-grey);
+	font-weight: 500;
+	font-style: normal;
+	background-color: var(--basic-green-cyan);;
+	background-image: url("../img/wafer_pattern.png");
+	background-position: 0 0;
+  	background-repeat: repeat;
+
+}
+.features h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.features-item {
+	font-size: 16px;
+	line-height: 22px;
+}
+.news {
+	color: var(--basic-dark-grey);
+	background-color: var(--basic-green-cyan);
+	background-image: url("../img/strawberry_background.jpg");
+	width: 560px;
+	height: 220px;
+	border-radius: 16px;
+}
+.news h2 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+}
+.news a {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--basic-dark-grey);
+}
+.subscription {
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--medium-dark-gray);
+	background-image: url("../img/mail_background.png");
+	width: 560px;
+	height: 220px;
+}
+
+.subscription input {
+	border-radius: 6px;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+/* Button */
+
+.button {
+    text-align: center;
+    color: var(--basic-white);
+    background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 70px;
+	vertical-align: middle;
+	border: none;
+}
+
+.button:hover {
+background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+box-shadow: 0px 2px 2px #AC1000;
+}
+.button-subscription {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+/* footer */
+.socials a{
+	display: block;
+	width: 36px;
+	height: 36px;
+}
+.facebook {
+	background-image: url("../img/facebook.svg");
+}
+.vkontakte{
+	background-image: url("../img/vkontakte.svg");
+	}
+.instagram {
+	background-image: url("../img/instagram.svg");
+}
+.twitter {
+	background-image: url(../img/twitter.svg);
+}
+.aside {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+}
+.aside-for-suppliers {
+	font-weight: bold;
+}
+.aside a:hover,
+.aside a:focus,
+.copyright a:hover,
+.copyright a:focus {
+	color: #FFBC9E;
+}
+.copyright {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+/* Products */
+
+.products-item img {
+	border-radius: 50%; 
+}
+
+.products-item span {
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.products-item p {
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+}
+
+.products-item h3 {
+	width: 267px;
+	height: 33px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.products-item article:hover,
+.products-item article:focus {
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 4px;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.products-item-link:hover  {
+	color: #FFBC9E;
+}
+.products-item article:hover >  .button {
+  display: inline;
+  text-decoration: none;
+}
